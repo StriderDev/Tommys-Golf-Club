@@ -400,12 +400,12 @@ function Contact() {
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
           <div className="rounded-2xl border border-gray-200 bg-white p-6">
             <h3 className="font-semibold text-gray-900">Address</h3>
-            <p className="mt-2 text-sm text-gray-600">123 Fairway Ave, Your City, ST 00000</p>
+            <p className="mt-2 text-sm text-gray-600">123 Golfplace Ave, A place probably in utah idk, ST 00000</p>
             <h3 className="mt-6 font-semibold text-gray-900">Hours</h3>
             <p className="mt-2 text-sm text-gray-600">Mon–Sun: 6:00am – 11:00pm</p>
             <h3 className="mt-6 font-semibold text-gray-900">Contact</h3>
             <p className="mt-2 text-sm text-gray-600 flex items-center gap-2"><Phone className="h-4 w-4" /> (555) 123‑4567</p>
-            <p className="mt-1 text-sm text-gray-600 flex items-center gap-2"><Mail className="h-4 w-4" /> hello@tommysgolfclub.com</p>
+            <p className="mt-1 text-sm text-gray-600 flex items-center gap-2"><Mail className="h-4 w-4" /> someonefrom@tommysgolfclub.com</p>
           </div>
           <div className="md:col-span-2 overflow-hidden rounded-2xl border border-gray-200">
             {/* Map placeholder */}
