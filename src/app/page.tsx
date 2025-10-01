@@ -118,7 +118,7 @@ function Hero() {
             <Star className="h-3.5 w-3.5" /> New: Fall Memberships now available
           </Badge>
           <h1 className="mt-5 text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl">
-            Premium indoor golf on <span className="bg-gradient-to-r from-emerald-400 to-lime-400 bg-clip-text text-transparent">TrackMan</span>
+            Premium indoor golf tailored <span className="bg-gradient-to-r from-emerald-400 to-lime-400 bg-clip-text text-transparent">To You</span>
           </h1>
           <p className="mt-4 max-w-xl text-base/7 text-white/80 md:text-lg/8">
             Reserve a bay, pay online, and show up swinging. Clean space, tour‑grade data, and a friendly local crew.
