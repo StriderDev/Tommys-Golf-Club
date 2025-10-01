@@ -390,7 +390,9 @@ function Contact() {
       <div className={container}>
         <motion.div {...fadeUp} className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">Visit us</h2>
-          <p className="mt-3 text-gray-600">We’re easy to find and easier to reach.</p>
+          <p className="mt-3 text-gray-600">
+  	    {"We're easy to find and easier to reach."}
+	  </p>
         </motion.div>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
           <div className="rounded-2xl border border-gray-200 bg-white p-6">
