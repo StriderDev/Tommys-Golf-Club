@@ -68,7 +68,7 @@ function Nav() {
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-lime-500 text-white">
               <Flag className="h-5 w-5" />
             </div>
-            <span className="text-sm font-semibold tracking-wide text-white/90">Tommy's Golf Club</span>
+            <span className="text-sm font-semibold tracking-wide text-white/90">{"Tommy's Golf Club"}</span>
           </div>
           <div className="hidden items-center gap-6 md:flex">
             {links.map((item) => (
@@ -425,7 +425,7 @@ function Footer() {
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-lime-500 text-white">
               <Flag className="h-5 w-5" />
             </div>
-            <span className="text-sm font-semibold tracking-wide text-white/80">Tommy's Golf Club</span>
+            <span className="text-sm font-semibold tracking-wide text-white/80">{"Tommy's Golf Club"}</span>
           </div>
           <p className="text-xs text-white/60">© {new Date().getFullYear()} Tommy's Golf Club. All rights reserved.</p>
         </div>
