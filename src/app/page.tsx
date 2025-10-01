@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, cubicBezier } from "framer-motion";
 import {
   Flag,
   Calendar,
@@ -21,7 +21,10 @@ const fadeUp = {
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, amount: 0.2 },
-  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  transition: {
+    duration: 0.6,
+    ease: cubicBezier(0.22, 1, 0.36, 1), // <- typed easing function
+  },
 };
 
 function Badge({ children }: { children: React.ReactNode }) {
@@ -76,10 +79,10 @@ function Nav() {
                 {item.label}
               </a>
             ))}
-            <a href="#book" className="ml-2">
-              <PillButton>
-                <Calendar className="h-4 w-4" /> Book Now
-              </PillButton>
+            <a href="#book" className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-lime-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/25 transition hover:brightness-110">
+              <Calendar className="h-4 w-4" />
+                Book Now
+              <ChevronRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
             </a>
           </div>
           <div className="md:hidden">
@@ -121,10 +124,10 @@ function Hero() {
             Reserve a bay, pay online, and show up swinging. Clean space, tour‑grade data, and a friendly local crew.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <a href="#book">
-              <PillButton>
-                <Calendar className="h-4 w-4" /> Book a Bay
-              </PillButton>
+            <a href="#book" className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-lime-500 px-4 py-3 text-sm font-semibold text-white shadow hover:brightness-110">
+  	      <Calendar className="h-4 w-4" />
+  		Book a Bay
+  	      <ChevronRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
             </a>
             <a href="#pricing">
               <GhostButton>
@@ -429,7 +432,9 @@ function Footer() {
             </div>
             <span className="text-sm font-semibold tracking-wide text-white/80">{"Tommy's Golf Club"}</span>
           </div>
-          <p className="text-xs text-white/60">© {new Date().getFullYear()} Tommy's Golf Club. All rights reserved.</p>
+          <p className="text-xs text-white/60">
+  	    © {new Date().getFullYear()} Tommy&#39;s Golf Club. All rights reserved.
+	  </p>
         </div>
       </div>
     </footer>
